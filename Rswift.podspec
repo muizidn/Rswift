@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
 
-  spec.name         = "R.swift.Library"
+  spec.name         = "Rswift"
   spec.version      = ENV['POD_VERSION']
   spec.license      = "MIT"
 
@@ -10,13 +10,13 @@ Pod::Spec.new do |spec|
 
                    R.swift is a tool to get strong typed, autocompleted resources like images, fonts and segues in Swift projects.
                    DESC
-  spec.homepage     = "https://github.com/mac-cain13/R.swift.Library"
+  spec.homepage     = "https://github.com/muizidn/Rswift"
 
   spec.author             = { "Mathijs Kadijk" => "mkadijk@gmail.com" }
   spec.social_media_url   = "https://twitter.com/mac_cain13"
 
   spec.requires_arc = true
-  spec.source          = { :git => "https://github.com/mac-cain13/R.swift.Library.git", :tag => "v#{spec.version}" }
+  spec.source          = { :git => "https://github.com/muizidn/Rswift.git", :tag => "v#{spec.version}" }
   spec.swift_version   = "5.1"
 
   spec.pod_target_xcconfig = { 'APPLICATION_EXTENSION_API_ONLY' => 'YES' }
@@ -27,7 +27,5 @@ Pod::Spec.new do |spec|
   spec.tvos.source_files  = "Library/**/*.swift"
   spec.watchos.deployment_target = '2.2'
   spec.watchos.source_files  = ["Library/Core/*.swift", "Library/Foundation/*.swift"]
-
-  spec.module_name   = "Rswift"
 
 end
